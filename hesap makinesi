@@ -1,0 +1,62 @@
+
+#include<iostream>
+using namespace std;
+int main() {setlocale(LC_ALL, "Turkish");
+double sayi, sonucs, sayi1, sayi2;
+int secilenislem;
+for (;;) {
+		int sonucf = 1;
+		cout << "----------HESAP-MAKİNESİ----------" << "<<KAPATMAK İÇİN 0'A BAS>>" << endl;
+		cout << " İŞLEM-SEÇİN (1:+) (2:-) (3:*) (4:/) (5:Üs Alma) (6:n!) = ";
+		cin >> secilenislem;
+		switch (secilenislem)	
+		{
+		case 1:
+			cout << "/Toplama İşlemi/.." << endl;
+			cin >> sayi1 >> sayi2;
+			system("cls");
+			cout << "SONUÇ: " << sayi1 << "+" << sayi2 << "=" << sayi1 + sayi2 << endl;
+			continue;
+		case 2:
+			cout << "/Çıkarma İşlemi/.." << endl;
+			cin >> sayi1 >> sayi2;
+			system("cls");
+			cout << "SONUÇ: " << sayi1 << "-" << sayi2 << "=" << sayi1 - sayi2 << endl;
+			continue;
+		case 3:
+			cout << "/Çarpma İşlemi/.." << endl;
+			cin >> sayi1 >> sayi2;
+			system("cls");
+			cout << "SONUÇ: " << sayi1 << "*" << sayi2 << "=" << sayi1 * sayi2 << endl;
+			continue;
+		case 4:
+			cout << "/Bölme İşlemi/.." << endl;
+			cin >> sayi1 >> sayi2;
+			system("cls");
+			cout << "SONUÇ: " << sayi1 << "/" << sayi2 << "=" << sayi1 / sayi2 << endl;
+			continue; system("cls");
+		case 5:
+			cout << "/Üs Alma İşlemi/.." << endl;
+			cin >> sayi1 >> sayi2;
+			sonucs = pow(sayi1, sayi2);
+			system("cls");
+			cout << "SONUÇ: " << sayi1 << "^" << sayi2 << "=" << sonucs << endl;
+			continue;
+		case 6:
+			cout << "/Faktöryel İşlemi/.." << endl;
+			cin >> sayi;
+			for (double i = 1; i <= sayi; i++)
+			{
+				sonucf = sonucf * i;
+			}
+			system("cls");
+			cout << "SONUÇ: " << sayi << "! =" << sonucf << endl;
+			break;
+		default:
+			system("cls");
+			cout << "HATALI İŞLEM SEÇİMİ" << endl;
+			break;
+		}
+	}
+return 0;
+}
