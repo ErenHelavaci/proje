@@ -1,0 +1,3 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: Ara dizin (x64\Debug\) başka bir projeden (deney.vcxproj) paylaşılan dosyalar içeriyor. Bu, hatalı temizleme ve yeniden oluşturma davranışına neden olabilir.
+  Kaynak.cpp
+  deney.vcxproj -> C:\Users\monst\source\repos\deney\x64\Debug\Not Defteri.exe
