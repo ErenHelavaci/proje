@@ -1,0 +1,123 @@
+#include <iostream>
+#include<Windows.h>
+#include <stdlib.h>
+using namespace std;
+string tahmin, kelime, ipucu1, ipucu2, ipucu3,oyuncu, oyuncu1;
+char basla = 'b';
+int skor, skor1;
+void oyuncuseçimi() {
+	cout << "Başlamak İçin Oyuncuları Seçin" << endl;
+	cout << "1.Oyuncu: " << oyuncu;
+	cin >> oyuncu; cout << endl;
+	cout << "2.Oyuncu: " << oyuncu1;
+	cin >> oyuncu1;
+	Sleep(100);
+	cout << "Oyuncu Seçimi Tamamlandı / Oyuna Başlamak İçin (B)'ye Bas/" << endl;
+	cin >> basla;
+	basla = tolower(basla);
+	if (basla == 'b')
+		system("cls");
+}
+void kelimeveipucu1() {
+	cout << oyuncu << " Lütfen Kelimeyi Gir" << endl;
+	cin >> kelime;
+	cout << "/1. İPUCUNU GİR/" << endl;
+	cin >> ipucu1;
+	cout << "/2. İPUCUNU GİR/" << endl;
+	cin >> ipucu2;
+	cout << "/3. İPUCUNU GİR/" << endl;
+	cin >> ipucu3;
+	for (int i = 3; i > 0; i--){
+		cout << i << ".. ";
+		Sleep(500);
+	}system("cls");
+	cout << "ipucları:" << ipucu1 << "  " << ipucu2 << "  " << ipucu3 << endl;
+}
+void kelimeveipucu2() {
+	cout<< oyuncu1 << " //Lütfen Kelimeyi Gir" << endl;
+	cin >> kelime;
+	cout << "/1. İPUCUNU GİR/" << endl;
+	cin >> ipucu1;
+	cout << "/2. İPUCUNU GİR/" << endl;
+	cin >> ipucu2;
+	cout << "/3. İPUCUNU GİR/" << endl;
+	cin >> ipucu3;
+	cout << "ipucları:" << ipucu1 << "  " << ipucu2 << "  " << ipucu3 << endl;
+	for (int i = 3; i > 0; i--){
+		cout << i << ".. ";
+		Sleep(500);
+	}
+	system("cls");
+}
+void tahminvegerisayım() {
+	cout << "Hadi Tahmine Başlayalım.." << endl;
+	for (int i = 3; i >0; i--){
+		if (i==3)
+			cout << "              Tahmin İçin Hak:[***]" << endl;
+		if (i==2)
+			cout << "              YANLIŞ TAHMİN!!/Kalan Hak:[**]" << endl;
+		if (i==1)
+			cout << "              YANLIŞ TAHMİN!!/Kalan Hak:[*]" << endl;
+		cin >> tahmin;
+		if (i==1)
+			cout << "                    Hakkın bitti" << endl;
+		if (tahmin == kelime){
+			cout << "        /KELİMEYİ BULDUN/:" << kelime << endl;
+			break;
+		}
+	}
+}
+void oyuncuskor() {
+	if (tahmin == kelime){
+		skor = skor + 10;
+		cout << oyuncu1 << " SKOR: " << skor << endl;
+	}
+	else{
+		skor = skor - 5;
+		cout << oyuncu1 << " SKOR: " << skor << endl;
+	}
+}
+void oyuncu1skor() {
+	if (tahmin == kelime){
+		skor1 = skor1 + 10;
+		cout << oyuncu << " SKOR: " << skor1 << endl;
+	}
+	else{
+		skor1 = skor1 - 5;
+		cout << oyuncu << " SKOR: " << skor1 << endl;
+	}
+}
+void oyunsonu() {
+	cout << " //OYUN BİTTİ İŞTE SKORLAR//" << endl;
+	cout << oyuncu << " SKOR: " << skor1 << "      " << oyuncu1 << " SKOR: " << skor << endl << endl;
+	if (skor > skor1)
+		cout << "KAZANAN: " << oyuncu1 << endl;
+	if (skor < skor1)
+		cout << "KAZANAN: " << oyuncu << endl;
+	if (skor == skor1)
+		cout <<"//BERABERE//" << endl << endl << endl;
+		
+}
+int main() {
+	setlocale(LC_ALL, "Turkish");
+	oyuncuseçimi();
+	for (int x = 0; x < 9; x++)
+	{
+		if (x % 2 == 0) {
+			kelimeveipucu1();
+			tahminvegerisayım();
+			oyuncuskor();
+			Sleep(2000);
+			system("cls");
+		}
+		else {
+			kelimeveipucu2();
+			tahminvegerisayım();
+			oyuncu1skor();
+			Sleep(2000);
+			system("cls");
+		}
+	} 
+	oyunsonu();
+	return 0;
+}
