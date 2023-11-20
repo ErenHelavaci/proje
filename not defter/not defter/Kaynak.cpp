@@ -1,10 +1,10 @@
 #include <iostream>
 #include<conio.h>
 using namespace std;
-int tuş;
-void sayfayazıyazma(int y, string sayfay[10]) {
-	tuş = _getch();
-	if (tuş == 9) {
+int tuÅŸ;
+void sayfayazÄ±yazma(int y, string sayfay[10]) {
+	tuÅŸ = _getch();
+	if (tuÅŸ == 9) {
 	system("cls");
 	cout << "SAYFA: "<< y << endl;
 	for (int i = 0; i <= 9; i = i++) {
@@ -13,45 +13,44 @@ void sayfayazıyazma(int y, string sayfay[10]) {
 	system("cls");
 	}
 }
-void sayfayazıgösterme(string sayıx[10]) {
+void sayfayazÄ±gÃ¶sterme(string sayÄ±x[10]) {
 	system("cls");
 	for (int i = 1; i <= 9; i = i++) {
-		cout << sayıx[i] << endl;
+		cout << sayÄ±x[i] << endl;
 	}
-	cout << endl << "..//YAPIMCILAR: Yusuf ÇINAR & Eren HELVACI//.." << endl;
 }
 int main() {
 	setlocale(LC_ALL, "Turkish");
-	string sayı1[10], sayı2[10], sayı3[10], sayı4[10], sayı5[10], sayı6[10], sayı7[10], sayı8[10], sayı9[10];
-	string* sayfa1 = sayı1;
-	string* sayfa2 = sayı2;
-	string* sayfa3 = sayı3;
-	string* sayfa4 = sayı4;
-	string* sayfa5 = sayı5;
-	string* sayfa6 = sayı6;
-	string* sayfa7 = sayı7;
-	string* sayfa8 = sayı8;
-	string* sayfa9 = sayı9;
+	string sayÄ±1[10], sayÄ±2[10], sayÄ±3[10], sayÄ±4[10], sayÄ±5[10], sayÄ±6[10], sayÄ±7[10], sayÄ±8[10], sayÄ±9[10];
+	string* sayfa1 = sayÄ±1;
+	string* sayfa2 = sayÄ±2;
+	string* sayfa3 = sayÄ±3;
+	string* sayfa4 = sayÄ±4;
+	string* sayfa5 = sayÄ±5;
+	string* sayfa6 = sayÄ±6;
+	string* sayfa7 = sayÄ±7;
+	string* sayfa8 = sayÄ±8;
+	string* sayfa9 = sayÄ±9;
 	for (;;) {
-		cout << "1. Sayfa Devam Etmek İçin (TAB)'a Basın [<|>] 2. Sayfaya Geçmek İçin (ESC)'ye Basın" << endl;
-			sayfayazıyazma(1, sayfa1);
-		cout << "2. Sayfa Devam Etmek İçin (TAB)'a Basın [<|>] 3. Sayfaya Geçmek İçin (ESC)'ye Basın" << endl;
-			sayfayazıyazma(2, sayfa2);
-		cout << "3. Sayfa Devam Etmek İçin (TAB)'a Basın [<|>] 4. Sayfaya Geçmek İçin (ESC)'ye Basın" << endl;
-			sayfayazıyazma(3, sayfa3);
-		cout << "4. Sayfa Devam Etmek İçin (TAB)'a Basın [<|>] 5. Sayfaya Geçmek İçin (ESC)'ye Basın" << endl;
-			sayfayazıyazma(4, sayfa4);
-		cout << "5. Sayfa Devam Etmek İçin (TAB)'a Basın [<|>] 6. Sayfaya Geçmek İçin (ESC)'ye Basın" << endl;
-			sayfayazıyazma(5, sayfa5);
-		cout << "6. Sayfa Devam Etmek İçin (TAB)'a Basın [<|>] 7. Sayfaya Geçmek İçin (ESC)'ye Basın" << endl;
-			sayfayazıyazma(6, sayfa6);
-		cout << "7. Sayfa Devam Etmek İçin (TAB)'a Basın [<|>] 8. Sayfaya Geçmek İçin (ESC)'ye Basın" << endl;
-			sayfayazıyazma(7, sayfa7);
-		cout << "8. Sayfa Devam Etmek İçin (TAB)'a Basın [<|>] 9. Sayfaya Geçmek İçin (ESC)'ye Basın" << endl;
-			sayfayazıyazma(8, sayfa8);
-		cout << "9. Sayfa Devam Etmek İçin (TAB)'a Basın [<|>] Yazılan Notları Görmek İçin (ESC)'ye Basın" << endl;
-		tuş = _getch();
-		if (tuş == 9) {
+		cout << "1. Sayfa Devam Etmek Ä°Ã§in (TAB)'a BasÄ±n [<|>] 2. Sayfaya GeÃ§mek Ä°Ã§in (ESC)'ye BasÄ±n" << endl;
+			sayfayazÄ±yazma(1, sayfa1);
+		cout << "2. Sayfa Devam Etmek Ä°Ã§in (TAB)'a BasÄ±n [<|>] 3. Sayfaya GeÃ§mek Ä°Ã§in (ESC)'ye BasÄ±n" << endl;
+			sayfayazÄ±yazma(2, sayfa2);
+		cout << "3. Sayfa Devam Etmek Ä°Ã§in (TAB)'a BasÄ±n [<|>] 4. Sayfaya GeÃ§mek Ä°Ã§in (ESC)'ye BasÄ±n" << endl;
+			sayfayazÄ±yazma(3, sayfa3);
+		cout << "4. Sayfa Devam Etmek Ä°Ã§in (TAB)'a BasÄ±n [<|>] 5. Sayfaya GeÃ§mek Ä°Ã§in (ESC)'ye BasÄ±n" << endl;
+			sayfayazÄ±yazma(4, sayfa4);
+		cout << "5. Sayfa Devam Etmek Ä°Ã§in (TAB)'a BasÄ±n [<|>] 6. Sayfaya GeÃ§mek Ä°Ã§in (ESC)'ye BasÄ±n" << endl;
+			sayfayazÄ±yazma(5, sayfa5);
+		cout << "6. Sayfa Devam Etmek Ä°Ã§in (TAB)'a BasÄ±n [<|>] 7. Sayfaya GeÃ§mek Ä°Ã§in (ESC)'ye BasÄ±n" << endl;
+			sayfayazÄ±yazma(6, sayfa6);
+		cout << "7. Sayfa Devam Etmek Ä°Ã§in (TAB)'a BasÄ±n [<|>] 8. Sayfaya GeÃ§mek Ä°Ã§in (ESC)'ye BasÄ±n" << endl;
+			sayfayazÄ±yazma(7, sayfa7);
+		cout << "8. Sayfa Devam Etmek Ä°Ã§in (TAB)'a BasÄ±n [<|>] 9. Sayfaya GeÃ§mek Ä°Ã§in (ESC)'ye BasÄ±n" << endl;
+			sayfayazÄ±yazma(8, sayfa8);
+		cout << "9. Sayfa Devam Etmek Ä°Ã§in (TAB)'a BasÄ±n [<|>] YazÄ±lan NotlarÄ± GÃ¶rmek Ä°Ã§in (ESC)'ye BasÄ±n" << endl;
+		tuÅŸ = _getch();
+		if (tuÅŸ == 9) {
 			system("cls");
 			cout << "SAYFA: 9" << endl;
 			for (int i = 0; i <= 9; i = i++) {
@@ -59,43 +58,42 @@ int main() {
 			}
 			system("cls");
 		}
-		else if (tuş == 27)
+		else if (tuÅŸ == 27)
 		{
 			break;
 		}
 	}
-	cout << "/Sayfa Numarasını Gir (1,2,3,4,5,6,7,8,9)//.." << endl;
+	cout << "/Sayfa NumarasÄ±nÄ± Gir (1,2,3,4,5,6,7,8,9)//.." << endl;
 	for (;;) {
-		tuş = _getch();
-		if (tuş == 49) {
-			sayfayazıgösterme(sayı1);
+		tuÅŸ = _getch();
+		if (tuÅŸ == 49) {
+			sayfayazÄ±gÃ¶sterme(sayÄ±1);
 		}
-		else if (tuş == 50) {
+		else if (tuÅŸ == 50) {
 			
-			sayfayazıgösterme(sayı2);
+			sayfayazÄ±gÃ¶sterme(sayÄ±2);
 		}
-		else if (tuş == 51) {
-			sayfayazıgösterme(sayı3);
+		else if (tuÅŸ == 51) {
+			sayfayazÄ±gÃ¶sterme(sayÄ±3);
 		}
-		else if (tuş == 52) {
-			sayfayazıgösterme(sayı4);
+		else if (tuÅŸ == 52) {
+			sayfayazÄ±gÃ¶sterme(sayÄ±4);
 		}
-		else if (tuş == 53) {
-			sayfayazıgösterme(sayı5);
+		else if (tuÅŸ == 53) {
+			sayfayazÄ±gÃ¶sterme(sayÄ±5);
 		}
-		else if (tuş == 54) {
-			sayfayazıgösterme(sayı6);
+		else if (tuÅŸ == 54) {
+			sayfayazÄ±gÃ¶sterme(sayÄ±6);
 		}
-		else if (tuş == 55) {
-			sayfayazıgösterme(sayı7);
+		else if (tuÅŸ == 55) {
+			sayfayazÄ±gÃ¶sterme(sayÄ±7);
 		}
-		else if (tuş == 56) {
-			sayfayazıgösterme(sayı8);
+		else if (tuÅŸ == 56) {
+			sayfayazÄ±gÃ¶sterme(sayÄ±8);
 		}
-		else if (tuş == 57) {
-			sayfayazıgösterme(sayı9);
+		else if (tuÅŸ == 57) {
+			sayfayazÄ±gÃ¶sterme(sayÄ±9);
 		}
 	}
-	cout << endl << "..//YAPIMCILAR: Yusuf ÇINAR & Eren HELVACI//.." << endl;
 	return 0;
 }
